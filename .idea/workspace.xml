@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edf0aa3f-2e9d-46a0-98fe-3ae3e5c80ca7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataBase/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataBase/controller/ContactController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataBase/controller/ContactDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataBase/data/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataBase/data/ContactDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataBase/facade/ContactFacade.java" afterDir="false" />
+    <list default="true" id="edf0aa3f-2e9d-46a0-98fe-3ae3e5c80ca7" name="Changes" comment="first">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataBase/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataBase/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataBase/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataBase/controller/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataBase/controller/ContactDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataBase/controller/ContactDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataBase/data/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataBase/data/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataBase/data/ContactDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataBase/data/ContactDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataBase/facade/ContactFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataBase/facade/ContactFacade.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +82,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "F:/Projects/SpringHomework/src/main/java/dataBase/Main.java",
-    "settings.editor.selected.configurable": "http.proxy"
+    "settings.editor.selected.configurable": "preferences.updates"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main">
@@ -170,6 +160,15 @@
       <option name="presentableId" value="Default" />
       <updated>1749825206992</updated>
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <option name="closed" value="true" />
+      <created>1749838188474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749838188474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,13 +182,41 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dataBase/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/dataBase/facade/ContactFacade.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dataBase/controller/ContactController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dataBase/facade/ContactFacade.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dataBase/data/ContactDao.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/dataBase/data/ContactDao.java</url>
+          <line>24</line>
+          <properties class="dataBase.data.ContactDao" method="getContact">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

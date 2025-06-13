@@ -9,9 +9,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ContactDao contactDao = new ContactDao();
-
-        contactDao.addContact("lll","4654","dfsf");
         SpringApplication.run(Main.class, args);
     }
 }

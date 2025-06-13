@@ -1,8 +1,13 @@
 package dataBase.controller;
 
+import dataBase.data.Contact;
+import dataBase.data.ContactDao;
 import dataBase.facade.ContactFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/contacts")
@@ -16,17 +21,25 @@ public class ContactController {
     }
 
     @PostMapping
-    public ContactDto createContact(@RequestParam String name, @RequestParam String phoneNumber, @RequestParam String email){
-        return facade.createContact(name,phoneNumber,email);
+    public ContactDto createContact(@RequestParam(name = "name") String name,
+                                    @RequestParam(name = "phoneNumber") String phoneNumber,
+                                    @RequestParam(name = "email") String email) {
+        return facade.createContact(name, phoneNumber, email);
+    }
+
+    @GetMapping
+    public List<Contact> getContacts() {
+        return facade.getContacts();
     }
 
     @GetMapping("/{id}")
-    public ContactDto getContact(@PathVariable Long id){
+    public ContactDto getContact(@PathVariable(name = "id") Long id) {
         return facade.getContact(id);
     }
 
-//    @PutMapping("/{contactId}")
-//    public ContactDto changeContact(@PathVariable Long id, @RequestParam String str){
-//        return facade.changeContact(id,)
-//    }
+    @PutMapping("/{id}")
+    public ContactDto changeContact(@PathVariable(name = "id") Long id, @RequestBody ContactDto contact) {
+        contact.setId(id);
+        return facade.changeContact(id, contact);
+    }
 }
